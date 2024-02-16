@@ -75,7 +75,7 @@
 						<li class = "current"><a href="#body">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#skills">Skills</a></li>
-						<li><a href="#works">Projects</a></li>
+						<li><a href="#projects">Projects</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resume <span class="caret"></span></a>
 							<ul class="dropdown-menu">
@@ -155,7 +155,7 @@
 					<i class="fa fa-code" aria-hidden="true"></i>
 				  </div>
 				  <h3>Versatile Skill Set</h3>
-				  <p>Tech enthusiast with versatility in Python, Git, Flask, ML, AWS, and more – navigating diverse data challenges with ease.</p>
+				  <p>Tech enthusiast with versatility in Python, ML, Git, AWS, and more – navigating diverse data challenges with ease.</p>
 				</div><!-- /.about-service -->
 			  </div>
 			  <div class="col-sm-4 wow fadeInUp animated" data-wow-duration="3000ms">
@@ -170,7 +170,7 @@
 				  <div class="rectangle">
 					<i class="fa fa-lightbulb" aria-hidden="true"></i>
 				  </div>
-				  <h3>Visionary Data Explorer</h3>
+				  <h3>Data Insight Maven</h3>
 				  <p>Visionary data explorer, showcasing leadership in exploratory data analysis, driving innovation with a discerning eye for insights.</p>
 				</div><!-- /.about-service -->
 				<div class="main-service text-left">
@@ -373,7 +373,7 @@
         ==================================== -->
 
 		<!-- Works Section -->
-		<section id="works" class="works clearfix">
+		<section id="projects" class="works clearfix">
 			<div class="container">
 				<div class="row">
 					<div class="sec-title text-center wow bounceInDown animated" data-wow-duration="500ms">
@@ -383,7 +383,6 @@
 					<div class="sec-sub-title text-center wow bounceInDown animated" data-wow-duration="500ms">
 						<p>Showcasing some of my key projects</p>
 					</div>
-<!--					Add categories when more projects are done-->
 <!--					<div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">-->
 <!--						<ul class="text-center">-->
 <!--							<li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>-->
@@ -395,31 +394,54 @@
 				</div>
 			</div>
 			<div class="project-wrapper text-center wow fadeIn animated" data-wow-duration="500ms">
-				<!-- Project 1: Eye For Blind -->
-				<figure class="mix work-item nlp  wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="500ms">
-					<img src="img/works/eye-animation.gif" alt="Eye For Blind">
+				<!-- Project 1: DocVQA -->
+				<figure class="mix work-item nlp wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="500ms">
+					<img src="img/works/docvqa.gif" alt="DocVQA">
 					<figcaption class="overlay">
-						<a class="fancybox" rel="projects" title="Eye For Blind" href="https://krishnapal2308-eye-for-blind-61ebee0.hf.space" target="_blank">
+						<a rel="projects" title="DocVQA" href="#" onclick="openPopup(event, 1)">
 							<i class="fa-solid fa-eye fa-lg"></i>
 						</a>
-						<h4>Eye For Blind | Image Captioning</h4>
-
+						<h4>DocVQA</h4>
 					</figcaption>
 				</figure>
 
-				<!-- Project 2: Gesture Recognition -->
-				<figure class="mix work-item ml wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="1000ms">
+				<!-- Hidden popup div for DocVQA project -->
+				<div id="popup1" class="popup" onclick="stopPropagation(event)">
+					<h2>DocVQA</h2>
+					<p>Please select where you want to go:</p>
+					<button onclick="window.open('https://medium.com/@krishnapal2308/understanding-docvqa-document-visual-question-answering-9e3db222bfed', '_blank')">Visit Blog</button>
+					<button onclick="window.open('https://krishnapal2308-docvqa-sanctum.hf.space', '_blank')">Visit Project Demo</button>
+				</div>
+
+				<!-- Project 2: Eye For Blind -->
+				<figure class="mix work-item nlp wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="1000ms">
+					<img src="img/works/eye-animation.gif" alt="Eye For Blind">
+					<figcaption class="overlay">
+						<a rel="projects" title="Eye For Blind" href="#" onclick="openPopup(event, 2)">
+							<i class="fa-solid fa-eye fa-lg"></i>
+						</a>
+						<h4>Eye For Blind | Image Captioning</h4>
+					</figcaption>
+				</figure>
+
+				<!-- Hidden popup div for Eye For Blind project -->
+				<div id="popup2" class="popup" onclick="stopPropagation(event)">
+					<h2>Eye For Blind | Image Captioning</h2>
+					<p>Please select where you want to go:</p>
+					<button onclick="window.open('https://www.kaggle.com/code/krishna2308/eye-for-blind', '_blank')">Training Code</button>
+					<button onclick="window.open('https://krishnapal2308-eye-for-blind-61ebee0.hf.space', '_blank')">Visit Project Demo</button>
+				</div>
+
+				<!-- Project 3: Gesture Recognition -->
+				<figure class="mix work-item ml wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="1500ms">
 					<img src="img/works/gesture-recognition.gif" alt="Gesture Recognition">
 					<figcaption class="overlay">
 						<a class="fancybox" rel="projects" title="Gesture Recognition" href="https://www.kaggle.com/code/krishna2308/gesture-recognition" target="_blank">
 							<i class="fa-solid fa-eye fa-lg"></i>
 						</a>
 						<h4>Gesture Recognition</h4>
-
 					</figcaption>
 				</figure>
-
-				<!-- Add more projects following the same structure -->
 
 				<!-- Project N: More to Come -->
 				<figure class="mix work-item learning-more wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1500ms">
@@ -456,7 +478,6 @@
 				</div>
 			</div>
 		</footer>
-
 
 		<a href="javascript:void(0);" id="back-top"><i class="fa-solid fa-angle-up fa-3x"></i></a>
 
@@ -499,6 +520,36 @@
 			wow.init();
 		</script>
 
+
+		<!-- JavaScript function to open/close the popup -->
+		<script>
+			function openPopup(event, index) {
+				var popup = document.getElementById("popup" + index);
+				popup.style.display = "block";
+				document.addEventListener("click", closePopupOutside);
+				event.preventDefault();
+				event.stopPropagation();
+			}
+
+			function closePopup(index) {
+				var popup = document.getElementById("popup" + index);
+				popup.style.display = "none";
+				document.removeEventListener("click", closePopupOutside);
+			}
+
+			function closePopupOutside(event) {
+				var popups = document.querySelectorAll('.popup');
+				popups.forEach(function(popup) {
+					if (!popup.contains(event.target)) {
+						closePopup(popup.id.slice(-1));
+					}
+				});
+			}
+
+			function stopPropagation(event) {
+				event.stopPropagation();
+			}
+		</script>
 
 		<!-- Custom Functions -->
         <script src="js/custom.js"></script>
