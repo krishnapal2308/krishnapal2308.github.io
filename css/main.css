@@ -206,7 +206,7 @@ body > section,
 
 /* Style for dropdown menu */
 .dropdown-menu {
-  background-color: rgba(16, 22, 54, 0.2); /* Background color of the dropdown menu */
+  background-color: rgba(16, 22, 54, 0.5); /* Background color of the dropdown menu */
   border: 1px solid #ccc; /* Border color of the dropdown menu */
   border-radius: 4px; /* Rounded corners for the dropdown menu */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for the dropdown menu */
